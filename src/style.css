@@ -1,0 +1,12 @@
+.card-header, .card-block {
+  padding: 1rem;
+}
+
+h2, h4 {
+  padding-left: .5rem;
+}
+
+main {
+  position: relative;
+  height: 100%;
+}

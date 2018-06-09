@@ -1,0 +1,34 @@
+{
+  "name": "frameworkless",
+  "version": "1.0.0",
+  "description": "javascript es6 on the rail",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "author": "Francesco Reali @amemifra",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4",
+    "workbox-webpack-plugin": "^3.2.0"
+  },
+  "dependencies": {
+    "@clr/icons": "^0.11.21",
+    "@clr/ui": "^0.11.21",
+    "@webcomponents/custom-elements": "^1.0.0",
+    "hyperhtml": "^2.10.8"
+  }
+}
