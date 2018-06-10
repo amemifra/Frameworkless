@@ -9,7 +9,9 @@
     "no-prototype-builtins": 1,
     "no-unused-vars": 0,
     "no-restricted-syntax": 0,
-    "prefer-template": 1
+    "prefer-template": 1,
+    "max-len": 0,
+    "no-confusing-arrow": 1
   },
   "env": {
     "browser": true,

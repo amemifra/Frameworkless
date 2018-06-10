@@ -3,7 +3,7 @@ import { hyper } from 'hyperhtml/esm';
 export const homepage = contentContainer => {
   hyper.bind(contentContainer)`
   <app-sidenav navigation-map="${JSON.stringify({ Introduzione: ['Browser', 'Librerie'] })}"></app-sidenav>
-    <div class="content-area">
+    <div class="content-area animation fadeIn">
       <h2>Frameworkless</h2>
       <h4>Lo sviluppo frontend in puro javascript utilizzando piccole librerie ed API di basso livello</h4>
       <section class="homepage-timeline">

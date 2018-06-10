@@ -3,7 +3,7 @@ import { hyper } from 'hyperhtml/esm';
 export const routing = contentContainer => {
   hyper.bind(contentContainer)`
     <app-sidenav nav-collapsible="true" navigation-map="${JSON.stringify({ 'Single Page Application': ['Hash', 'Standard', 'Navigo'], 'Multi Page Application': ['PWA way'] })}"></app-sidenav>
-    <div class="content-area">
+    <div class="content-area animation fadeIn">
       <h2>Routing</h2>
       <h4>Navigazione frontend di una single page application</h4>
       <section class="homepage-timeline">

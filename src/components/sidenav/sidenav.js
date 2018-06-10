@@ -1,5 +1,6 @@
 import { hyper } from 'hyperhtml/esm';
-import { getMapKeys } from '../../utils/map-utils';
+import { getMapKeys } from '../../utils/map.utils';
+import { hyperGetAttribute } from '../../utils/hyper.utils';
 
 class Sidenav extends HTMLElement {
   static get observedAttributes() {
@@ -17,13 +18,13 @@ class Sidenav extends HTMLElement {
   }
   render() {
     return this.html`
-    ${getMapKeys(JSON.parse(this.getAttribute('navigation-map')))
+    ${getMapKeys(hyperGetAttribute('navigation-map', this))
     .reduce((prev, curr, index) => {
       const section = hyper.wire()`
-      <section class="${'nav-group' + (this.getAttribute('nav-collapsible') === true ? ' collapsible' : '')}">
+      <section class="${'nav-group' + (hyperGetAttribute('nav-collapsible', this) === true ? ' collapsible' : '')}">
           <input id="${'sidenavcbx' + index}" type="checkbox">
           <label for="${'sidenavcbx' + index}">${curr}</label>
-    ${JSON.parse(this.getAttribute('navigation-map'))[curr]
+    ${hyperGetAttribute('navigation-map', this)[curr]
     .reduce((pre, cur) => {
       const li = hyper.wire()`
         <li>
